@@ -39,3 +39,6 @@ def delete(id:int):
         raise HTTPException(404,"student doesnt exist")
     del students[id]
     return {"message":"data deleted"}
+
+def welcome():
+    print("Welcome")
